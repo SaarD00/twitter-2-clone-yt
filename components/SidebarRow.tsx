@@ -14,7 +14,7 @@ function SidebarRow({ Icon, title, onClick }: Props) {
     >
       <Icon className="h-6 w-6" />
 
-      <p className="hidden text-base group-hover:text-twitter md:inline-flex lg:text-xl">
+      <p className="hidden text-base group-hover:text-twitter lg:inline-flex lg:text-xl">
         {title}
       </p>
     </div>
