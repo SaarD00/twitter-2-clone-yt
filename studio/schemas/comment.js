@@ -21,7 +21,7 @@ export default {
     {
       name: 'tweet',
       title: 'Tweet',
-      description: 'Tweet that this comment is related to',
+      description: 'Reference the Tweet the comment i accociated to:',
       type: 'reference',
       to: {
         type: 'tweet',

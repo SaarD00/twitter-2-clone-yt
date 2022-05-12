@@ -5,13 +5,13 @@ export default {
   fields: [
     {
       name: 'text',
-      title: 'Text in tweet',
+      title: 'Text in the Tweet',
       type: 'string',
     },
     {
       name: 'blockTweet',
-      title: 'Block tweet',
-      description: 'Admin control: block tweet',
+      title: 'Block Tweet',
+      description: 'Admin controls: Toggle if tweet is deemed inappropriate',
       type: 'boolean',
     },
     {
@@ -21,13 +21,27 @@ export default {
     },
     {
       name: 'profileImg',
-      title: 'Profile Image',
+      title: 'Progile Image',
       type: 'string',
     },
     {
       name: 'image',
-      title: 'Tweet Image',
+      title: 'Tweet image',
       type: 'string',
     },
   ],
+
+  // preview: {
+  //   select: {
+  //     title: 'title',
+  //     author: 'author.name',
+  //     media: 'mainImage',
+  //   },
+  //   prepare(selection) {
+  //     const {author} = selection
+  //     return Object.assign({}, selection, {
+  //       subtitle: author && `by ${author}`,
+  //     })
+  //   },
+  // },
 }
