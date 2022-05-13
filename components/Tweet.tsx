@@ -10,6 +10,7 @@ import {
 import { useSession } from 'next-auth/react'
 import toast from 'react-hot-toast'
 import { fetchComments } from '../utils/fetchComments'
+import { AiOutlineRetweet } from 'react-icons/ai'
 
 interface Props {
   tweet: Tweet
@@ -101,14 +102,14 @@ function Tweet({ tweet }: Props) {
           onClick={(e) => session && setCommentBoxVisible(!commentBoxVisible)}
           className="flex cursor-pointer items-center space-x-3 text-gray-400"
         >
-          <ChatAlt2Icon className="h-5 w-5" />
+          <ChatAlt2Icon className="h-7 w-7 p-1 hover:text-sky-500" />
           <p>{comments.length}</p>
         </div>
         <div className="flex cursor-pointer items-center space-x-3 text-gray-400">
-          <SwitchHorizontalIcon className="h-5 w-5" />
+          <AiOutlineRetweet className="h-5 w-5" />
         </div>
-        <div className="flex cursor-pointer items-center space-x-3 text-gray-400">
-          <HeartIcon className="h-5 w-5" />
+        <div className="flex cursor-pointer items-center space-x-3 rounded-full p-1 text-gray-400  hover:bg-pink-600/20">
+          <HeartIcon className="h-5 w-5 hover:text-pink-600" />
         </div>
         <div className="flex cursor-pointer items-center space-x-3 text-gray-400">
           <UploadIcon className="h-5 w-5" />
