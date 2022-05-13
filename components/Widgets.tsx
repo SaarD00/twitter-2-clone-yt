@@ -13,7 +13,7 @@ function Widgets() {
         <SearchCircleIcon className="h-5 w-5 flex-shrink-0 text-gray-400" />
         <input
           type="text"
-          className="flex-1 bg-transparent outline-none"
+          className="flex-1 bg-transparent text-white outline-none"
           placeholder="Search Twitter"
         />
       </div>

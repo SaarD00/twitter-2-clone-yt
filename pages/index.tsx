@@ -22,7 +22,7 @@ const Home = ({ tweets }: Props) => {
 
         <Toaster />
 
-        <main className="grid grid-cols-9 ">
+        <main className="grid grid-cols-10 ">
           <Sidebar />
 
           <Feed tweets={tweets} />
