@@ -18,11 +18,32 @@ function Widgets() {
         />
       </div>
 
-      <div className="mt-10 rounded-xl bg-[#1e2732] p-1 py-2">
+      <div className="mt-2 rounded-lg bg-[#273340]">
+        <p className="p-3 font-bold text-white">Tweeter of the month</p>
+        <div className="flex justify-between p-2">
+          <div className=" flex space-x-2 text-white">
+            <div>
+              <img
+                src="https://pbs.twimg.com/profile_images/1522692307555954689/dVKJCAlV_normal.jpg"
+                className="h-10 rounded-full"
+              />
+            </div>
+            <div>
+              <p className="font-bold">wongback</p>
+              <p className="text-gray-500">@wongback</p>
+            </div>
+          </div>
+          <div className="flex w-16 items-center justify-center rounded-full bg-white  font-bold">
+            Follow
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-5 rounded-xl bg-[#1e2732] p-1 py-2">
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="elonmusk"
-          options={{ height: 540 }}
+          options={{ height: 500 }}
           theme="dark"
           noFooter={true}
           noBorders={true}
