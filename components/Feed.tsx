@@ -23,12 +23,12 @@ const Feed = ({ tweets: tweetsProps }: Props) => {
   }
 
   return (
-    <div className="scrollbar-hide  col-span-6 max-h-screen overflow-scroll border-x lg:col-span-4">
+    <div className="col-span-6  max-h-screen overflow-y-scroll scroll-smooth border-x border-[#38444d]  lg:col-span-4">
       <div className="flex items-center justify-between">
-        <h1 className="p-5 pb-0 text-xl font-bold">Home</h1>
+        <h1 className="p-5 pb-0 text-xl font-bold text-white">Home</h1>
         <RefreshIcon
           onClick={handleRefresh}
-          className="mr-5 mt-5 h-8 w-8 cursor-pointer text-twitter transition-all duration-500 ease-out hover:rotate-180 active:scale-125"
+          className="mr-5 mt-5 h-8 w-8 cursor-pointer text-white transition-all duration-500 ease-out hover:rotate-180 hover:text-twitter active:scale-125"
         />
       </div>
 

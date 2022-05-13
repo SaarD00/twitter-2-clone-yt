@@ -83,7 +83,7 @@ const TweetBox = ({ setTweets }: Props) => {
             value={input}
             type="text"
             placeholder="What's Happening?"
-            className="h-24 w-full text-xl outline-none placeholder:text-xl"
+            className="placeholder-text-gray-600 h-24 w-full bg-transparent text-xl text-white outline-none placeholder:text-xl"
           />
           <div className="flex items-center">
             <div className="flex flex-1 space-x-2 text-twitter">

@@ -16,7 +16,10 @@ function Sidebar() {
   const { data: session } = useSession()
   return (
     <div className="col-span-2   mx-auto flex flex-col items-center px-4 sm:col-span-1 md:col-span-2 md:items-start">
-      <img src="https://links.papareact.com/drq" className="m-3 h-10 w-10" />
+      <img
+        src="https://cdn.sanity.io/images/mrfd4see/production/ec2fea28c4596ca89f3d6565149ad4451512feb3-1034x851.png"
+        className="m-3 h-10 w-10 object-contain "
+      />
       <SidebarRow title="Home" Icon={HomeIcon} />
       <SidebarRow title="Explore" Icon={HashtagIcon} />
       <SidebarRow title="Notifications" Icon={BellIcon} />
@@ -37,7 +40,9 @@ function Sidebar() {
           src={session?.user?.image || 'https://links.papareact.com/gll'}
         />
         <div className="mx-2 flex flex-col">
-          <p className=" font-bold ">{session?.user?.name || 'Sign In'}</p>
+          <p className=" font-bold text-white ">
+            {session?.user?.name || 'Sign In'}
+          </p>
 
           <p className=" text-sm text-gray-500">
             @

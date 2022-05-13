@@ -13,21 +13,23 @@ interface Props {
 }
 const Home = ({ tweets }: Props) => {
   return (
-    <div className="mx-auto lg:max-w-7xl">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className="bg-twitterDark">
+      <div className="mx-auto lg:max-w-7xl">
+        <Head>
+          <title>Create Next App</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
 
-      <Toaster />
+        <Toaster />
 
-      <main className="grid grid-cols-9">
-        <Sidebar />
+        <main className="grid grid-cols-9 ">
+          <Sidebar />
 
-        <Feed tweets={tweets} />
+          <Feed tweets={tweets} />
 
-        <Widgets />
-      </main>
+          <Widgets />
+        </main>
+      </div>
     </div>
   )
 }
