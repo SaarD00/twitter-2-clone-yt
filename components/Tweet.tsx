@@ -63,9 +63,9 @@ function Tweet({ tweet }: Props) {
   return (
     <div
       key={tweet._id}
-      className="flex flex-col space-x-3 border-y border-[#38444d] p-5"
+      className="flex cursor-pointer flex-col space-x-3 border-y border-[#38444d] bg-twitterDark p-5 transition-all duration-200 hover:bg-[#203041]  "
     >
-      <div className="flex space-x-3">
+      <div className="flex space-x-3 ">
         <img
           className="h-10 w-10 rounded-full object-cover"
           src={tweet.profileImg || 'https://links.papareact.com/gll'}
