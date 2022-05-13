@@ -16,7 +16,7 @@ const Home = ({ tweets }: Props) => {
     <div className="bg-twitterDark">
       <div className="mx-auto lg:max-w-7xl">
         <Head>
-          <title>Create Next App</title>
+          <title>Twitter-Clone</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
