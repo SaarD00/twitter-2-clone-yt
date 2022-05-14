@@ -15,7 +15,7 @@ import { signIn, signOut, useSession } from 'next-auth/react'
 function Sidebar() {
   const { data: session } = useSession()
   return (
-    <div className="col-span-2   mx-auto flex flex-col items-center px-4 sm:col-span-1 md:col-span-2 md:items-start">
+    <div className="col-span-2   mx-auto hidden flex-col items-center px-4 sm:col-span-1 md:col-span-2 md:inline-flex md:items-start">
       <img
         src="https://cdn.sanity.io/images/mrfd4see/production/ec2fea28c4596ca89f3d6565149ad4451512feb3-1034x851.png"
         className="m-3 h-10 w-10 object-contain "
