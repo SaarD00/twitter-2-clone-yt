@@ -23,7 +23,7 @@ const Feed = ({ tweets: tweetsProps }: Props) => {
   }
 
   return (
-    <div className="col-span-11 max-h-screen  overflow-y-scroll scroll-smooth border-x border-[#38444d] md:col-span-7  lg:col-span-5">
+    <div className="col-span-11 max-h-screen   overflow-y-scroll scroll-smooth border-x border-[#38444d] md:col-span-7  lg:col-span-5">
       <div className="sticky top-0 z-50 flex items-center justify-between bg-twitterDark  ">
         <h1 className="p-3 pb-0 text-xl font-bold text-white">Home</h1>
         <RefreshIcon

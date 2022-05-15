@@ -4,8 +4,6 @@ import React from 'react'
 import { TwitterTimelineEmbed } from 'react-twitter-embed'
 
 function Widgets() {
-  const { data: session } = useSession()
-  console.log(session?.user?.name)
   return (
     <div className="col-span-3 mx-5 mt-2 hidden items-start px-2 lg:inline">
       {/* Searchar */}
