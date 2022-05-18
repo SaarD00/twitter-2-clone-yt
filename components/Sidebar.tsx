@@ -11,6 +11,7 @@ import {
   DotsCircleHorizontalIcon,
 } from '@heroicons/react/outline'
 import { signIn, signOut, useSession } from 'next-auth/react'
+import { useRouter } from 'next/router'
 
 function Sidebar() {
   const { data: session } = useSession()
