@@ -82,7 +82,7 @@ const TweetBox = ({ setTweets }: Props) => {
             }}
             value={input}
             type="text"
-            placeholder="What's Happening?"
+            placeholder={!session ? 'Sign In to Tweet!' : "What's Happening?"}
             className="placeholder-text-gray-600 h-24 w-full bg-transparent text-xl text-white outline-none placeholder:text-xl"
           />
           <div className="flex items-center">

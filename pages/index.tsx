@@ -14,8 +14,8 @@ interface Props {
 }
 const Home = ({ tweets }: Props) => {
   return (
-    <div className="bg-twitterDark">
-      <div className="mx-auto lg:max-w-7xl">
+    <div className=" bg-twitterDark">
+      <div className="mx-auto  lg:max-w-7xl">
         <Head>
           <title>Twitter-Clone</title>
           <link rel="icon" href="/favicon.ico" />
