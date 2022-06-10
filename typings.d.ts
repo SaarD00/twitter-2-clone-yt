@@ -32,3 +32,17 @@ export type TweetBody = {
       _type: 'reference'
     }
   }
+
+  export interface Like {
+    _id: string
+    _rev: string
+    _type: 'like'
+    _createdAt: string
+    _updatedAt: string
+    tweet: { _ref: string, _type: 'reference' }
+    username: string
+    profileImg: string
+    tweetId: string
+
+
+  }
