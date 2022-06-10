@@ -32,7 +32,7 @@ const Feed = ({ tweets: tweetsProps }: Props) => {
         />
       </div>
 
-      <div className="sticky top-5 z-30 scroll-smooth bg-twitterDark ">
+      <div className="z-30 scroll-smooth bg-twitterDark ">
         <TweetBox setTweets={setTweets} />
       </div>
       {/* feed */}
