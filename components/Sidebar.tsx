@@ -48,7 +48,7 @@ function Sidebar() {
           <p className=" text-sm text-gray-500">
             @
             {session?.user?.name?.replace(/\s+/g, '').toLowerCase() ||
-              'pleaseSignIn'}
+              'SignIn'}
           </p>
         </div>
       </div>
