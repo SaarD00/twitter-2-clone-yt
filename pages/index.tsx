@@ -8,6 +8,7 @@ import { fetchTweets } from '../utils/fetchTweets'
 import { Tweet } from '../typings'
 import { Toaster } from 'react-hot-toast'
 import Sidebar_mobile from '../components/Sidebar_mobile'
+import { useSession } from 'next-auth/react'
 
 interface Props {
   tweets: Tweet[]
