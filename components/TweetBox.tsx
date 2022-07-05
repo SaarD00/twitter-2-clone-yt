@@ -58,12 +58,17 @@ const TweetBox = ({ setTweets }: Props) => {
     return json
   }
 
+  const newTweet = async () => {
+    await fetchTweets()
+    console.log('yey done', fetchTweets())
+  }
   const handleSubmit = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault()
     postTweet()
     setInput('')
     setImage('')
     setImageUrlBoxIsOpen(false)
+    newTweet()
   }
 
   return (
